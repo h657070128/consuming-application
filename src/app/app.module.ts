@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ClarityModule } from "clarity-angular";
+import { LibModule } from 'quickstart-lib';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,7 +11,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ClarityModule.forRoot(),
+    LibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
